@@ -82,7 +82,7 @@ export default function Home() {
             <div className={styles.FormInput}>
               <label htmlFor="room_type">Room Type:</label>
               <select id="room_type" name="room_type">
-                {Object.keys(RoomType).filter((v) => isNaN(Number(v))).map((k, index) => <option key={index} value={k}>{k}</option>)}
+                {Object.keys(RoomType).filter((v) => isNaN(Number(v))).map((k, index) => <option key={index} value={k} onChange={(e) => setSubmitData({...submitData, room_type: RoomType[k as keyof typeof RoomType]})}>{k}</option>)}
               </select>
             </div>
             <div className={styles.FormInput}>
