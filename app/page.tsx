@@ -66,15 +66,16 @@ export default function Home() {
             priority
           />
           <ol>
-            {data?.map(t => {
-              return <li>Room of type {t.room_type} with {t.adults} adults, {t.babies} babies, {t.children} children and {t.children_no_bed} without a bed, {t.non_eu_travelers} non eu travelers.</li>
+            {data?.map((t, index) => {
+              return <li key={index}>Room of type {t.room_type} with {t.adults} adults, {t.babies} babies, {t.children} children and {t.children_no_bed} without a bed, {t.non_eu_travelers} non eu travelers.</li>
             })}
           </ol>
 
           <div className={styles.ctas}>
             <a
               className={styles.primary}
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+              href="#"
+              onClick={createTravel}
               target="_blank"
               rel="noopener noreferrer"
             >
