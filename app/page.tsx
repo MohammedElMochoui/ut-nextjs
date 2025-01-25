@@ -82,7 +82,7 @@ export default function Home() {
             <div>
               <label htmlFor="room_type">Room Type:</label>
               <select id="room_type" name="room_type">
-                {Object.keys(RoomType).filter((v) => isNaN(Number(v))).map(k => <option value={k}>{k}</option>)}
+                {Object.keys(RoomType).filter((v) => isNaN(Number(v))).map((k, index) => <option key={index} value={k}>{k}</option>)}
               </select>
             </div>
             <div>
@@ -127,7 +127,7 @@ export default function Home() {
                 width={20}
                 height={20}
               />
-              Deploy now
+              Create Travel
             </a>
             <a
               href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
