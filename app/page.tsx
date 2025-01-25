@@ -79,29 +79,29 @@ export default function Home() {
             priority
           />
           <Form action="">
-            <div>
+            <div className={styles.FormInput}>
               <label htmlFor="room_type">Room Type:</label>
               <select id="room_type" name="room_type">
                 {Object.keys(RoomType).filter((v) => isNaN(Number(v))).map((k, index) => <option key={index} value={k}>{k}</option>)}
               </select>
             </div>
-            <div>
+            <div className={styles.FormInput}>
               <label htmlFor="adults">Adults:</label>
               <input type="number" id="adults" value={submitData.adults} onChange={(e) => setSubmitData({ ...submitData, adults: Number(e.target.value) })} />
             </div>
-            <div>
+            <div className={styles.FormInput}>
               <label htmlFor="children">Children:</label>
               <input type="number" id="children" value={submitData.children} onChange={(e) => setSubmitData({ ...submitData, children: Number(e.target.value) })} />
             </div>
-            <div>
+            <div className={styles.FormInput}>
               <label htmlFor="babies">Babies:</label>
               <input type="number" id="babies" value={submitData.babies} onChange={(e) => setSubmitData({ ...submitData, babies: Number(e.target.value) })} />
             </div>
-            <div>
+            <div className={styles.FormInput}>
               <label htmlFor="children_no_bed">Children no bed:</label>
               <input type="number" id="children_no_bed" value={submitData.children_no_bed} onChange={(e) => setSubmitData({ ...submitData, children_no_bed: Number(e.target.value) })} />
             </div>
-            <div>
+            <div className={styles.FormInput}>
               <label htmlFor="non_eu_travelers">Non eu Travelers:</label>
               <input type="number" id="non_eu_travelers" value={submitData.non_eu_travelers} onChange={(e) => setSubmitData({ ...submitData, non_eu_travelers: Number(e.target.value) })} />
             </div>

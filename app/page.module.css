@@ -166,3 +166,14 @@ a.secondary {
     filter: invert();
   }
 }
+
+.logo {
+  justify-self: center;
+  align-self: center;
+}
+
+.FormInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
