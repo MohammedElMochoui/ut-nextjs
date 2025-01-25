@@ -44,7 +44,7 @@ export default function Home() {
       }
     }
     fetchData();
-  }, [data])
+  }, [])
 
   const createTravel = async (e: React.FormEvent) => {
     e.preventDefault();
