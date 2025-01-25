@@ -41,6 +41,9 @@ export default function Home() {
     e.preventDefault();
     await fetch("https://ut-mz6c.onrender.com/", {
       method: "post",
+      headers: {
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({
         adults: 1,
         babies: 1,
