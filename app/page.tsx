@@ -48,7 +48,7 @@ export default function Home() {
 
   const createTravel = async (e: React.FormEvent) => {
     e.preventDefault();
-    await fetch("https://ut-mz6c.onrender.com/", {
+    await fetch("http://dgwk8ss4ks8oskocogg0wc88.91.107.213.90.sslip.io/", {
       method: "post",
       headers: {
         "Content-Type": "application/json"
