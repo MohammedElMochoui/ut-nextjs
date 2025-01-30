@@ -36,7 +36,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://ut-mz6c.onrender.com/");
+        const response = await fetch("http://dgwk8ss4ks8oskocogg0wc88.91.107.213.90.sslip.io/");
         const json = await response.json();
         setData(json);
       } catch (err) {
